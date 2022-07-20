@@ -14,7 +14,3 @@ export default function Estiloso(){
 
 
 
-
-//Next.JS e React: Curso Intensivo - Masterclass #01 [2021]
-//1:20:30 Componente Navegador / 2:46:34
-//https://youtu.be/PHKaJlAeNLk?t=4830
