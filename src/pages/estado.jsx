@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import { useState } from 'react';
+import styles from '../styles/Estado.module.css';
 
 export default function Estado(){
     const [number, setNumber] = useState(0);
@@ -7,17 +8,37 @@ export default function Estado(){
 
     function increment(){
         setNumber(number + 1);
+    }
 
+    function decrement(){
+        setNumber(number - 1);
     }
 
     return (
         <Layout title="Componente com  Estado">
-            <span>{number}</span>
-            <button onClick={increment}>Incrementar</button>
+            <div className={styles.number}>
+                <span>{number}</span>
+            </div>           
+            
+            <div className={styles.buttons}>
+                <button 
+                    className={styles.buttonIncrement}
+                    onClick={increment}>
+                        Incrementar
+                </button>
+                <button 
+                    className={styles.buttonDecrement}
+                    onClick={decrement}>
+                        Decrementar
+                </button>
+                <button
+                    className={styles.buttonReset} 
+                    onClick={() => setNumber(0)}>
+                        Zerar
+                </button>
+            </div>
+            
         </Layout>
     )
 }
 
-//Next.JS e React: Curso Intensivo
-//Cod3r Cursos  - 01:55:50 Usando API #1
-//https://youtu.be/PHKaJlAeNLk?t=6952

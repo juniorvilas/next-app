@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: start;      
+}
+
+.container input {
+    width: 7rem;
+    height: 2.5rem;
+    margin: 5px;
+    text-align: center;
+    
+}
+
+.container button {
+    width: 7rem;
+    height: 2.5rem;
+    margin: 5px;
+    text-align: center;
+    background-color: green;
+    border-radius: 6px;
+    border: 1px solid green;
+    cursor: pointer;
+    color: white;
+
+}
