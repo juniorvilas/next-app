@@ -1,6 +1,9 @@
 {
     "editor.guides.bracketPairs": true,
     "cSpell.words": [
-        "cabecalho"
+        "cabecalho",
+        "codigo",
+        "navegacao",
+        "Navegacao"
     ]
 }
